@@ -112,6 +112,13 @@ export default class App extends React.Component {
             <a href="https://nationalsecuritycasino.com">
               nationalsecuritycasino.com
             </a>
+            {" - "}
+            <TwitterTweetEmbed
+              key={"BondLaundering"}
+              isHashtag={true}
+              isProfile={false}
+              tweetId={"BondLaundering"}
+            />
           </h2>{" "}
           poorness=poverty/equality is transitory, 10x less (1/price)/hours
           since 1980, 1/11 GDP is m2 without checking(
