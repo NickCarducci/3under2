@@ -202,10 +202,21 @@ export default class App extends React.Component {
           <br />
           Here, you must prove condensation does not happen @uscourts @neiltyson
           <h1>
-            <a href="https://vianickcarducci.medium.com/optimal-security-for-webapps-dd2a65c2418c">
+            <a
+              href="https://drive.google.com/file/d/1FnCZjwC22GDhR9XTxV3idOu4ls9_0l5R/view?usp=sharing"
+              //https://vianickcarducci.medium.com/optimal-security-for-webapps-dd2a65c2418c"
+            >
               3% under $2k
             </a>
+            {" - "}
+            <a href="https://drive.google.com/file/d/1j6sfrhFszTyy11AowjfGyQzXZ1yYD4mO/view?usp=sharing">
+              voting blockchain blunder, IPFS phoenix
+            </a>
           </h1>
+          <a href="https://thumbprint.us">thumbprint.us</a>
+          <br />
+          Saver Party is the only party that can offer you degrowth & consumer
+          protection
           <TwitterTweetEmbed
             key={"1385635835375140875"}
             tweetId={"1385635835375140875"}
