@@ -120,6 +120,31 @@ export default class App extends React.Component {
               tweetId={"BondLaundering"}
             />
           </h2>{" "}
+          half unemployed since 3/2020 are 65+, 20x 55+/millennials rental
+          income per capita, accrual 44x checking, cash:debt*income back to
+          1908, truncatedsalestax
+          <br />
+          <br />
+          Part I:{" "}
+          <a href="https://goo.gl/maps/Wuj3o3YSYNPGPUPV6">
+            dr dickerson malpractice conflict of interest disability medicare
+            orthopedic surgeon bone marrow transplant
+          </a>
+          &nbsp; disability recipients are mostly 65+... their whole lives to
+          save, and they cannot nourish themselves. they commit me for 13 days
+          and release me under the same conditions to the loiterers that are
+          borrowers that I chore for without work being for myself and my gains,
+          not to jigger profits from consumers but have the ends' means and the
+          ends itself for my work and settled purchases for my expenditures of
+          these public-park-deeds
+          <br />
+          Part II:&nbsp;
+          <a href="https://4vosh.csb.app/Red_Bank,_New_Jersey,_United_States">
+            #MillennialIncomeDeficit #Discrimination #ImplausibleLandlordUse
+            #CreditCounterfeitLaundering
+          </a>
+          <br />
+          <br />
           poorness=poverty/equality is transitory, 10x less (1/price)/hours
           since 1980, 1/11 GDP is m2 without checking(
           <a href="https://vaults.biz">currencyComponentofM1</a>)
