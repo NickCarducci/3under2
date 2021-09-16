@@ -107,6 +107,10 @@ export default class App extends React.Component {
             maxWidth: "600px"
           }}
         >
+          government shouldn't launder profits of free rider mutables, they can
+          target-margin-networks and finite producers otherwise
+          left-to-self-regulate quality, accrual third party beneficiary &
+          non-rollover non-improvement implausible use
           <h2>
             Perfect{" - "}
             <a href="https://nationalsecuritycasino.com">
