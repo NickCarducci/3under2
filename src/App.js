@@ -1,4 +1,5 @@
 import FraudMoney2 from "./FraudMoney2";
+import Cable from "./Dropwire";
 import React from "react";
 import "./styles.css";
 import TwitterTweetEmbed from "./TwitterTweetEmbed.js";
@@ -11,12 +12,17 @@ export default class App extends React.Component {
       //marginTop: window.innerWidth * (window.innerHeight / window.innerWidth)
     };
     this.header = React.createRef();
+    for (let i = 0; i < 220; i++) {
+      this["scrollImg" + i] = React.createRef();
+    }
   }
   componentDidMount = () => {
     window.addEventListener("resize", this.resize);
     this.resize();
+    window.addEventListener("scroll", this.handleScroll);
   };
   componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.handleScroll);
     window.removeEventListener("resize", this.resize);
   };
   resize = () => {
@@ -24,8 +30,33 @@ export default class App extends React.Component {
       marginTop: this.header.current.offsetHeight
     });
   };
+  handleScroll = (e) => {
+    if (!this.state.offScroll) {
+      const scrollTop = window.scrollY;
+      this.setState(
+        {
+          scrolling: true,
+          scrollTop
+        },
+        () => {
+          clearTimeout(this.scrollTimeout);
+          this.scrollTimeout = setTimeout(() => {
+            this.setState({
+              scrolling: false
+            });
+          }, 900);
+        }
+      );
+    }
+  };
   render() {
     const { marginTop } = this.state;
+    const handleScollImgError = (e) => {
+      if (e.message) {
+        console.log(e.message);
+        this.setState({ serviceCancelingImages: true });
+      }
+    };
     return (
       <div className="App">
         <div
@@ -107,10 +138,32 @@ export default class App extends React.Component {
             maxWidth: "600px"
           }}
         >
-          government shouldn't launder profits of free rider mutables, they can
-          target-margin-networks and finite producers otherwise
-          left-to-self-regulate quality, accrual third party beneficiary &
-          non-rollover non-improvement implausible use
+          <Cable
+            style={{
+              height: "560px",
+              width: "min-content",
+              minWidth: "100%",
+              maxWidth: "740px"
+            }}
+            onError={handleScollImgError}
+            src={
+              this.state.serviceCancelingImages
+                ? ""
+                : `https://fred.stlouisfed.org/graph/graph-landing.php?g=FSwQ&width=670&height=475`
+              //"https://fred.stlouisfed.org/graph/?g=Gkvt"
+            }
+            float="left"
+            title="https://fred.stlouisfed.org/graph/?g=FSwQ"
+            scrolling={this.state.scrolling}
+            fwd={this["scrollImg" + 1]}
+            scrollTopAndHeight={this.state.scrollTop + window.innerHeight}
+            scrollTop={this.state.scrollTop}
+          />
+          government shouldn't launder profits of free rider mutables (broadband
+          networking fees, bridge-tolls and 10-40% fed-state debt-services
+          included), they can target-margin-networks and finite producers
+          otherwise left-to-self-regulate quality, accrual third party
+          beneficiary & non-rollover non-improvement implausible use
           <h2>
             Perfect{" - "}
             <a href="https://nationalsecuritycasino.com">
