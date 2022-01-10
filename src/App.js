@@ -7,6 +7,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      scrollTop: 0
       //marginTop: window.innerWidth * (window.innerHeight / window.innerWidth)
     };
     this.header = React.createRef();
@@ -15,20 +16,12 @@ export default class App extends React.Component {
     }
   }
   componentDidMount = () => {
-    window.addEventListener("resize", this.resize);
-    this.resize();
     window.addEventListener("scroll", this.handleScroll);
   };
   componentWillUnmount = () => {
     window.removeEventListener("scroll", this.handleScroll);
-    window.removeEventListener("resize", this.resize);
   };
-  resize = () => {
-    this.setState({
-      marginTop: this.header.current.offsetHeight
-    });
-  };
-  handleScroll = (e) => {
+  handleScroll = () => {
     if (!this.state.offScroll) {
       const scrollTop = window.scrollY;
       this.setState(
@@ -48,7 +41,6 @@ export default class App extends React.Component {
     }
   };
   render() {
-    const { marginTop } = this.state;
     const handleScollImgError = (e) => {
       if (e.message) {
         console.log(e.message);
@@ -66,7 +58,6 @@ export default class App extends React.Component {
         }}
       >
         <div
-          ref={this.header}
           style={{
             display: "flex",
             justifyContent: "space-between",
